@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace a tu archivo CSS para estilos -->    
+    <script src="carrito.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo"><a href="index.html">Tienda de Ropa</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li class="perfil-carrito"><a href="perfil.html">Perfil</a></li>
+                    <li class="perfil-carrito"><a href="carrito.html">Carrito</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="productos">
+            <div class="container">
+                <h2>Productos</h2>            
+                <!-- Aquí irían tus productos -->
+                <div class="producto" id="producto-1">
+                    <img src="img/camiseta.jpg" class="img-fluid" alt="Producto 1" width="400 x 400">
+                    <h3>Producto 1</h3>
+                    <p>Precio: $20.00</p>
+                    <details>
+                        <div class="card card-body">
+                            <img src="img/camiseta.jpg" class="img-fluid" alt="Producto 1" width="400 x 400">
+                                <p>Descripción del producto...</p>
+                                <p>Tallas disponibles...</p>
+                                <p>Precio: $20.00</p>
+                                <!-- Botón de Comprar -->
+                                <p>Si el mensaje predeterminado no aparece, por favor, diganos el nombre del Producto y di lo que necesitas.</p>
+                                <p>En un momento te atenderemos via chat.</p>
+                                <a>
+                                    <button class="semi-logo"><a href="https://www.instagram.com/direct/t/120856455973098/?message=Hola,%20estoy%20interesado%20en%20tu%20producto" target="_blank">Enviar Mensaje</a></button>
+                                </a>
+                            </div>
+                    </details>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="producto">
+                    <img src="img/camiseta2.jpg" class="img-fluid" alt="Producto 2" width="400 x 400">
+                    <h3>Producto 2</h3>
+                    <p>Precio: $25.00</p>
+                    <details>
+                        <div class="card card-body">
+                            <img src="img/camiseta2.jpg" class="img-fluid" alt="Producto 2" width="400 x 400">
+                                <p>Descripción del producto...</p>
+                                <p>Tallas disponibles...</p>
+                                <p>Precio: $20.00</p>
+                                <!-- Botón de Comprar -->
+                                <p>Si el mensaje predeterminado no aparece, por favor, diganos el nombre del Producto y di lo que necesitas.</p>
+                                <p>En un momento te atenderemos via chat.</p>
+                                <a>
+                                    <button class="semi-logo"><a href="https://www.instagram.com/direct/t/120856455973098/?message=Hola,%20estoy%20interesado%20en%20tu%20producto" target="_blank">Enviar Mensaje</a></button>
+                                </a>
+                            </div>
+                    </details>
+                </div>
+                
+                <!-- Producto 3 -->
+                <div class="producto">
+                    <img src="img/camiseta3.jpg" class="img-fluid" alt="Producto 3" width="400 x 400">
+                    <h3>Producto 3</h3>
+                    <p>Precio: $30.00</p>
+                    <button onclick="agregarAlCarrito('Nombre del Producto', 20.00)">Agregar al carrito</button>
+                </div>
+            </div>
+        </section>
+    <main class="container">
+        <section>
+            <h2>Resumen de Nosotros</h2>
+            <p>Somos una tienda de ropa comprometida con ofrecer la mejor calidad y servicio a nuestros clientes.</p>
+            <!-- Aquí iría más información sobre la empresa -->
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>Derechos de autor © 2024 Tienda de Ropa</p>
+        </div>
+    </footer>
+</body>
+</html>

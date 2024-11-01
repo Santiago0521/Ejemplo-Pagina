@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace a tu archivo CSS para estilos -->
+    <script src="carrito.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo"><a href="index.html">Tienda de Ropa</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li class="perfil-carrito"><a href="perfil.html">Perfil</a></li>
+                    <li class="perfil-carrito"><a href="carrito.html">Carrito</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="carrito">
+            <div class="container">
+                <h2>Carrito de Compras</h2>
+                <!-- Aquí puedes mostrar los productos agregados al carrito -->
+                <div class="producto-carrito">
+                    <img src="imagen-producto.jpg" alt="Producto 1">
+                    <h3>Producto 1</h3>
+                    <p>Precio: $20.00</p>
+                    <div class="opciones">
+                        <button class="editar" onclick="editarProducto()">Editar</button>
+                        <button class="eliminar" onclick="eliminarProducto()">Eliminar</button>
+                    </div>
+                </div>       
+                <!-- Esto iria en el JS:
+                function editarProducto() {
+                    // Aquí puedes agregar la lógica para editar el producto
+                    console.log("Editar producto");
+                }
+
+                function eliminarProducto() {
+                    // Aquí puedes agregar la lógica para eliminar el producto
+                    console.log("Eliminar producto");
+                }
+                -->
+                
+                <!-- Repite este bloque para cada producto en el carrito -->
+                <div class="total-carrito">
+                    <p>Total: $XXX.XX</p>
+                    <!-- Botones para proceder al pago o vaciar el carrito -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Derechos de autor © 2024 Tienda de Ropa</p>
+        </div>
+    </footer>
+</body>
+</html>
